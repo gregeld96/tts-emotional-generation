@@ -75,7 +75,7 @@ def main():
 
     print(f"🎵 Generating '{args.style}' speech → {args.out}")
     
-    # Generate speech with comprehensive error handling
+    # Generate speech
     try:
         tts.tts_to_file(text=args.text, file_path=args.out, speed=speed)
         
@@ -88,7 +88,7 @@ def main():
             sys.exit(1)
             
     except KeyboardInterrupt:
-        print("\n⚠️  Operation cancelled by user")
+        print("\n Operation cancelled by user")
         # Clean up partial file if it exists
         if Path(args.out).exists():
             Path(args.out).unlink()

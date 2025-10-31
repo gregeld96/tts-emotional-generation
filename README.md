@@ -1,4 +1,4 @@
-# Emotional Speech Generation — Simple TTS Emotional Generation Prototype
+# Simple TTS Emotional Generation Prototype
 
 ## Overview
 This is a simple Text-to-Speech (TTS) prototype built with **Coqui TTS**.
